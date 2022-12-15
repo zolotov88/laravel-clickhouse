@@ -29,7 +29,5 @@ class ClickhouseServiceProvider extends ServiceProvider
 
         /** @var Connection $connection */
         $connection = $db->connection('clickhouse');
-
-        Model::setConnectionResolver($connection);
     }
 }
